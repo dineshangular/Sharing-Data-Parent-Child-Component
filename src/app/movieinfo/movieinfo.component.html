@@ -1,0 +1,6 @@
+<div *ngIf="list">
+    <h5>{{list.id}}. {{list.name | uppercase}}</h5>
+    <h6><b>Year :</b> {{list.year}}</h6>
+    <p><b>Intro :</b> {{list.intro}}</p>
+    <button class="btn btn-primary" (click)="sendmsg(list.name)">Send Message to Parent</button>
+</div>
